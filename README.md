@@ -1,4 +1,5 @@
-# 📝 React To-Do List App
+# React_Project
+This is my updated README for the todo app.
 
 A fully functional, interactive To-Do List built using **React**. This app enables users to **add**, **edit**, **delete**, **complete**, and **filter** tasks. It supports **persistent storage using localStorage** and provides **toast notifications** using `react-hot-toast`.
 
@@ -139,3 +140,6 @@ This project was created as a simple React application to demonstrate component-
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
+=======
+# React_Project
+>>>>>>> 833aee62bad6c553dd1d3af7191a2afb8f08b3d1
