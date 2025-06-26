@@ -3,8 +3,8 @@
 A fully functional, interactive To-Do List built using **React**. This app enables users to **add**, **edit**, **delete**, **complete**, and **filter** tasks. It supports **persistent storage using localStorage** and provides **toast notifications** using `react-hot-toast`.
 
 ---
-[App screenshot](image.png)
-[App screenshot](image1.png)
+[App screenshot](src/image.png)
+[App screenshot](src/image1.png)
 ---
 
 ## 🔍 Key Features
