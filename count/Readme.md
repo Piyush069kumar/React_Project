@@ -4,7 +4,8 @@
 A simple yet powerful **React-based Smart Counter** application that allows you to increment, decrement, reset, and countdown a numeric value. The current counter value is persisted in `localStorage`, so it survives page reloads. Styled beautifully with Tailwind CSS and enhanced with icons from `react-icons`.
 
 ---
-
+![Smart Counter Screenshot](https://raw.githubusercontent.com/Piyush069kumar/React_Project/main/screenshot.png)
+---
 ## 🔍 Features
 
 * ➕ Increment and ➖ Decrement the counter
