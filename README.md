@@ -137,9 +137,6 @@ This project was created as a simple React application to demonstrate component-
 
 ---
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
 =======
 # React_Project
 >>>>>>> 833aee62bad6c553dd1d3af7191a2afb8f08b3d1
