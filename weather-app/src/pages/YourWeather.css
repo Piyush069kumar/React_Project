@@ -1,0 +1,65 @@
+/* General container for the page */
+.your-weather-container {
+  background-color: rgb(77, 199, 255); 
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-top: 4rem;
+  color: white;
+  min-height: 60vh;
+  margin: 2rem auto;
+ box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+
+/* Location image */
+.location-image {
+  width: 80px;
+  margin-bottom: 1rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+
+/* Heading */
+.your-weather-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Access Location Button */
+.access-button {
+  padding: 14px 28px;
+  font-size: 1rem;
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.access-button:hover {
+  background-color: #0a58ca;
+  transform: scale(1.05);
+}
+
+/* Float animation for image */
+@keyframes float {
+  0% { transform: translatey(0px); }
+  50% { transform: translatey(-10px); }
+  100% { transform: translatey(0px); }
+}
+
+/* Spinner Centering */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}

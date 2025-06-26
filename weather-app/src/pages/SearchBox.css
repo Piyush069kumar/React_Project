@@ -1,0 +1,86 @@
+.weather-card {
+  background-color: rgba(45, 148, 200, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  color: white;
+}
+
+/* Form layout */
+.weather-card form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Input styling */
+.weather-card input[type="text"] {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  width: 200px;
+  font-size: 1rem;
+}
+
+/* Button styling */
+.weather-card button {
+  background-color: rgba(79, 35, 35, 0.2);
+  border: none;
+  border-radius: 8px;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.weather-card button:hover {
+  transform: scale(1.1);
+}
+
+
+
+form {
+  display: flex;
+  align-items: center;
+  background: rgba(198, 216, 218, 0.2);
+  padding: 0.6rem;
+  border-radius: 40px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+form input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #000000;
+  flex: 1;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+form button {
+  background: #00b4d8;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #0077b6;
+}

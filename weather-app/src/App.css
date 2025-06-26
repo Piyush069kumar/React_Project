@@ -1,0 +1,92 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  min-height: 100vh;
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  
+}
+
+/* App Container */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  color: #ffffff;
+  max-width: 800px;
+  margin: auto;
+  min-height: 100vh;  
+  
+}
+
+.App h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.App p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Navigation buttons */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  
+}
+.Link{
+  text-decoration: none;
+}
+
+.button {
+  background: linear-gradient(135deg, #6263d5, #0077b6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  transform: translateY(-2px) scale(1.05);
+  background: linear-gradient(135deg, #023e8a, #0096c7);
+}
+
+@media (max-width: 500px) {
+  .App h1 {
+    font-size: 2rem;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,47 @@
+/* src/pages/SearchWeather.css */
+
+.search-weather-container {
+  background-color: rgb(77, 199, 255); 
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-top: 2rem;
+  width: 90%;
+  max-width: 600px;
+  color: white;
+  min-height: 50vh;
+  margin: 2rem auto;
+ box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+
+.search-message {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  color: #f1f1f1;
+  opacity: 0.8;
+}
+
+/* Optional: Add some spacing between components */
+.search-weather-container > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .search-message {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .search-weather-container {
+    padding: 1rem;
+  }
+}
+
+p{
+    margin: 2rem auto;
+    text-align: center;
+    font-weight: bold;
+}
