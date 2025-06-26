@@ -4,7 +4,7 @@ A fully functional, interactive To-Do List built using **React**. This app enabl
 
 ---
 [App screenshot](src/image.png)
-[App screenshot](image1.png)
+[App screenshot](src/image1.png)
 ---
 
 ## 🔍 Key Features
