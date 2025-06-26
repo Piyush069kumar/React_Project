@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
+  width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
+  background-image: url('/public/one.avif'); 
+  background-size: cover;                
+  background-position: center;           
+  background-repeat: no-repeat;          
+  padding-bottom: 2rem;
+  overflow-x: hidden;
+  padding: 2rem 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.nav {
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  justify-content: center; /* center the heading */
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav h1 {
+  font-size: 2rem;
+  color: #2c2c2c;
+  text-align: center;
+}
+
+/* Position dropdown in top-right corner */
+.nav .filter-dropdown {
+  position: absolute;
+  top: 1rem;
+  right: 0rem;
+}
+
+
+
+/* Keep filter-dropdown styles as-is below */
+
+
+.filter-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 10px 16px;
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  width: fit-content;
+}
+
+.filter-dropdown label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.filter-dropdown select {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: #444;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  appearance: none;
+}
+
+.filter-dropdown select:hover {
+  background-color: #555;
+}
+
+.filter-dropdown select:focus {
+  box-shadow: 0 0 0 2px #007bff;
+}
+
+/* Optional: Arrow styling for better appearance (Webkit-based browsers) */
+.filter-dropdown select::-ms-expand {
+  display: none;
+}
+.filter-dropdown select::-webkit-inner-spin-button,
+.filter-dropdown select::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .filter-dropdown {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .filter-dropdown select {
+    width: 100%;
   }
 }

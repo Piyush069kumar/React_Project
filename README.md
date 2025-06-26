@@ -1,70 +1,141 @@
-# Getting Started with Create React App
+# 📝 React To-Do List App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fully functional, interactive To-Do List built using **React**. This app enables users to **add**, **edit**, **delete**, **complete**, and **filter** tasks. It supports **persistent storage using localStorage** and provides **toast notifications** using `react-hot-toast`.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🔍 Key Features
 
-### `npm start`
+* ➕ Add new tasks
+* 📝 Edit existing tasks inline
+* 🗑️ Delete tasks
+* ✅ Mark tasks as completed
+* ↻ Toggle between **All**, **Completed**, and **Pending** tasks
+* 📏 Save tasks automatically in browser localStorage
+* 🚀 Real-time toast alerts for actions (add, edit, delete)
+* ⚡ Clean and modular component structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🏧 Project Structure
 
-### `npm test`
+```
+project/
+│
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── comopenets/
+│   │   ├── AddTask.js
+│   │   ├── TaskItem.css
+│   │   ├── TaskItem.js
+│   │   ├── TaskList.css
+│   │   └── TaskList.js
+│   │
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+│
+├── package.json
+└── README.md
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> ⚠️ **Note**: The folder `comopenets` is likely a typo and should be renamed to `components` for clarity and convention.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧑‍💻 How It Works
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Task Actions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Action      | Functionality Description                                   |
+| ----------- | ----------------------------------------------------------- |
+| Add Task    | Type in the input and click **Add Item** or press **Enter** |
+| Edit Task   | Click **Edit**, modify the text, then click **Save**        |
+| Delete Task | Click the **Delete** button beside the task                 |
+| Complete    | Use the checkbox to toggle task completion                  |
+| Filter      | Select from dropdown: All / Completed / Pending             |
 
-### `npm run eject`
+### Task Persistence
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Tasks are **stored in `localStorage`** on every change.
+* When the app loads, it reads from `localStorage` and displays previously saved tasks.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 💪 Built With
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* ⚛️ [React](https://reactjs.org/) – for building the UI
+* 🔔 [react-hot-toast](https://react-hot-toast.com/) – for toast notifications
+* 💅 Plain CSS – for styling components
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📦 Installation & Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Clone the repository**
 
-### Code Splitting
+   ```bash
+   git clone https://github.com/yourusername/react-todo-app.git
+   cd react-todo-app
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Install dependencies**
 
-### Analyzing the Bundle Size
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. **Start the app**
 
-### Making a Progressive Web App
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📸 Preview
 
-### Deployment
+> Here’s a mockup of how the app behaves:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* 🟢 Task added successfully toast
+* 🟡 Editing task inline
+* 🔴 Deleting a task removes it from the list and localStorage
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🔧 Customization
+
+You can enhance this project by:
+
+* Adding due dates and priority levels
+* Styling with Tailwind, Bootstrap, or Material UI
+* Implementing drag-and-drop to reorder tasks
+* Creating user authentication and storing tasks in a backend (e.g., Firebase)
+
+---
+
+## ❌ Known Issues
+
+* Folder `comopenets` should be renamed to `components` for consistency.
+* A small typo in color styling inside `TaskItem.js`:
+
+  ```js
+  color: todo.completed ? "#bbbbbb" : "#color: #bbbbbb;"; // should be: "#bbbbbb"
+  ```
+
+---
+
+## ✨ Credits
+
+This project was created as a simple React application to demonstrate component-based architecture, localStorage usage, and toast notifications.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
