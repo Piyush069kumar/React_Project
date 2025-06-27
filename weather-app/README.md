@@ -120,11 +120,7 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser.
 * Location permission must be enabled manually
 * No autocomplete or validation for city names
 
----
 
-## © License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
 
