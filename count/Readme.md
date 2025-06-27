@@ -38,13 +38,7 @@ smart-counter/
 
 ---
 
-## 📅 Screenshot
 
-![Smart Counter Screenshot](https://user-images.githubusercontent.com/placeholder/smart-counter-screenshot.png)
-
-> Replace the above URL with your actual screenshot URL after uploading to GitHub or another image host.
-
----
 
 ## 📆 Installation & Usage
 

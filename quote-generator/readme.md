@@ -38,17 +38,7 @@ quote-generator/
 └── README.md
 ```
 
----
 
-## 📸 Screenshot
-
-> Add this in your README after uploading the image to GitHub:
-
-```md
-![Random Quote Generator Screenshot](https://raw.githubusercontent.com/yourusername/your-repo/main/src/assets/screenshot.png)
-```
-
----
 
 ## 🚀 Getting Started
 

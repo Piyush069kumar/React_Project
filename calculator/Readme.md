@@ -43,13 +43,6 @@ calculator-app/
 
 ---
 
-## 📸 Screenshot
-
-> Add a screenshot here:
-
-```md
-![Calculator Preview](https://raw.githubusercontent.com/yourusername/your-repo/main/screenshot.png)
-```
 
 Replace the link above with the actual GitHub image URL if available.
 

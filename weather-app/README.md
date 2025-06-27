@@ -120,11 +120,7 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser.
 * Location permission must be enabled manually
 * No autocomplete or validation for city names
 
----
 
-## © License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
 
@@ -135,15 +131,8 @@ This project is licensed under the [MIT License](LICENSE).
 > * Place the image in the `src/assets/` folder
 > * Reference it in your README like this:
 
-```md
-![App Screenshot](src/assets/your-image.png)
 ```
 
-Or if hosted:
-
-```md
-![App Screenshot](https://yourdomain.com/image.png)
-```
 
 ---
 
