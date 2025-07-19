@@ -12,8 +12,10 @@ const QuoteGenerator = () => {
   const fetchRandomQuote = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`https://api.quotable.io/random`);
+      // const res = await fetch(`https://api.quotable.io/random`);
+      const res = await fetch('https://dummyjson.com/quotes/random');
       const data = await res.json();
+      console.log(data);
       setQuote(data);
     } catch (e) {
       alert("Network error");
@@ -28,7 +30,7 @@ const QuoteGenerator = () => {
 
   const copy = () => {
     if (quote) {
-      navigator.clipboard.writeText(`"${quote.content}" — ${quote.author}`);
+      navigator.clipboard.writeText(`"${quote.quote}" — ${quote.author}`);
       setCopied(true);
       toast.success("Copied");
       setTimeout(() => setCopied(false), 500);
@@ -37,7 +39,7 @@ const QuoteGenerator = () => {
 
   const tweetQuote = () => {
     if (quote) {
-      const tweetText = `"${quote.content}" — ${quote.author}`;
+      const tweetText = `"${quote.quote}" — ${quote.author}`;
       const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
       window.open(tweetUrl, "_blank");
     }
@@ -52,7 +54,7 @@ const QuoteGenerator = () => {
           {/* Quote Content */}
           <div className="mb-6">
             <div className="text-lg font-semibold text-gray-800 pr-10">
-              {quote.content}
+              {quote.quote}
             </div>
             <div className="mt-3 text-right text-sm text-gray-500">
               — {quote.author}
